@@ -734,6 +734,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 4.375rem;
+  padding: 0 0.9375rem;
 }
 
 .pricing__items {
@@ -894,19 +895,22 @@ body {
   gap: 0.4375rem;
   padding-top: 1.3125rem;
   max-width: 14.375rem;
+  min-height: 4.6875rem;
 }
 
 .info-slide-people__name {
+  white-space: nowrap;
   font-weight: 500;
   line-height: 1.2;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .info-slide-people__proffecion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  white-space: nowrap;
   color: #b5b5b5;
   font-weight: 500;
 }
@@ -1908,6 +1912,12 @@ button.swiper-pagination-bullet {
 
   .people__container {
     gap: 3.375rem;
+  }
+}
+
+@media (max-width: 23.75em) {
+  .info-slide-people__proffecion {
+    white-space: pre-wrap;
   }
 }
 
