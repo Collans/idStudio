@@ -1301,6 +1301,10 @@ button.swiper-pagination-bullet {
     margin-bottom: 2rem;
   }
 
+  .header-main__text {
+    font-size: 1rem;
+  }
+
   .header-main__text:not(:last-child) {
     margin-bottom: 3.375rem;
   }
@@ -1462,11 +1466,15 @@ button.swiper-pagination-bullet {
   }
 
   .header-main__title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .header-main__title:not(:last-child) {
     margin-bottom: 2.5625rem;
+  }
+
+  .header-main__text {
+    font-size: 0.9375rem;
   }
 
   .header-main__text:not(:last-child) {
@@ -2240,6 +2248,18 @@ button.swiper-pagination-bullet {
     }
 }
 
+@supports (font-size: clamp( 0.9375rem , 0.915521978rem  +  0.1098901099vw , 1rem )) {
+    .header-main__text {
+      font-size: clamp( 0.9375rem , 0.915521978rem  +  0.1098901099vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.9375rem , 0.915521978rem  +  0.1098901099vw , 1rem )) {
+    .header-main__text {
+      font-size: calc(0.9375rem + 0.0625 * (100vw - 20rem) / 56.875);
+    }
+}
+
 @supports (margin-bottom: clamp( 2.5625rem , 2.2767857143rem  +  1.4285714286vw , 3.375rem )) {
     .header-main__text:not(:last-child) {
       margin-bottom: clamp( 2.5625rem , 2.2767857143rem  +  1.4285714286vw , 3.375rem );
@@ -2306,15 +2326,15 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 20em) and (max-width: 25.875em) {
-@supports (font-size: clamp( 2.5rem , 0.7978723404rem  +  8.5106382979vw , 3rem )) {
+@supports (font-size: clamp( 2.25rem , -0.3031914894rem  +  12.7659574468vw , 3rem )) {
     .header-main__title {
-      font-size: clamp( 2.5rem , 0.7978723404rem  +  8.5106382979vw , 3rem );
+      font-size: clamp( 2.25rem , -0.3031914894rem  +  12.7659574468vw , 3rem );
     }
 }
 
-@supports not (font-size: clamp( 2.5rem , 0.7978723404rem  +  8.5106382979vw , 3rem )) {
+@supports not (font-size: clamp( 2.25rem , -0.3031914894rem  +  12.7659574468vw , 3rem )) {
     .header-main__title {
-      font-size: calc(2.5rem + 0.5 * (100vw - 20rem) / 5.875);
+      font-size: calc(2.25rem + 0.75 * (100vw - 20rem) / 5.875);
     }
 }
 }
