@@ -262,7 +262,7 @@ body {
 .button {
   text-align: center;
   border-radius: 0.5rem;
-  border: 2px solid var(--second-color, #d3a265);
+  border: 0.125rem solid #d3a265;
   padding: 0.75rem 2.125rem;
   font-weight: 700;
   line-height: 1.5;
@@ -402,7 +402,7 @@ body {
 }
 
 .footer {
-  background: var(--2-bg, #f4f4f4);
+  background: #f4f4f4;
 }
 
 .footer__container {
@@ -572,8 +572,14 @@ body {
   max-width: 23.875rem;
 }
 
+.header-main__button {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
 .about {
-  background: var(--2-bg, #f4f4f4);
+  background: #f4f4f4;
 }
 
 .about__container {
@@ -1212,14 +1218,6 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (min-width: 29.99875em) {
-  .button {
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-  }
-}
-
 @media (min-width: 47.99875em) {
   .menu__list {
     display: -webkit-box;
@@ -1786,6 +1784,12 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 29.99875em) {
+  .header-main__button {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+  }
+
   .question__button_768 {
     -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
