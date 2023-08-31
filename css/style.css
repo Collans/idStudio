@@ -717,6 +717,11 @@ body {
   justify-items: center;
 }
 
+.portfolio__item {
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
 .portfolio__item img {
   max-width: 100%;
   -webkit-transition: -webkit-transform 0.3s;
@@ -2419,13 +2424,29 @@ button.swiper-pagination-bullet {
     color: #d3a265;
   }
 
+  .footer-column__social a:hover {
+    color: #a9712d;
+  }
+
+  .navigation-footer-column__item:hover {
+    color: #d3a265;
+  }
+
+  .contacts-footer-column__link:hover {
+    color: #d3a265;
+  }
+
   .portfolio__item img:hover {
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
   .item-pricing__button:hover {
     border: 2px solid #fff;
+  }
+
+  .info-slide-people__social a:hover {
+    color: #a9712d;
   }
 }
